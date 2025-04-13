@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+:root{
+    --fFamily:Hanken Grotesk;
+    /* PRIMARY-COLORS */
+    --lightRed:hsl(0, 50%, 98%);
+    --orangeYellow:hsl(51, 37%, 96%);
+    --greenTeal:hsl(164, 48%, 94%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    /* NEUTRAL-COLORS */
+    --bgColor:hsl(241, 88%, 91%);
+    --dGrayBlue:  hsl(224, 30%, 27%);
+    --paleBlue: hsla(217, 50%, 97%, 0.71);
+    --white:hsl(0, 0%, 100%);
+    /* GRADIENT-COLOR */
+    --lightSlateBackground:hsl(252, 85%, 60%);
+    --lightRoyalBlue: hsl(241, 81%, 54%) ;
+    --violetBlueCircle:hsla(252, 78%, 51%, 0.219);
+    --persianBlueCircle:hsla(241, 83%, 25%, 0.317);
+
+}
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+    font-family: var(--fFamily);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--bgColor);
+   
+}
+main{
+    display: flex;
+    gap: 1.5rem;
+    height: 290px;
+    width: 410px;
+    background-color: var(--white);
+    border-radius: 14px;
+    box-shadow:2px 2px var(--bgColor) ;
+    
+    
+}
+/* ASIDE1 */
+.side{
+    text-align: center;
+    width: 215px;
+    background: linear-gradient(var(--lightSlateBackground),var(--lightRoyalBlue)); 
+    border-radius: 14px 16px 16px 14px ;
+}
+.side h2{
+    font-size: 14px;
+    margin-top: 18px;
+    color: var(--paleBlue);
+}
+.circle{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    text-align: center;
+    margin:10px auto;
+    background:linear-gradient(var(--persianBlueCircle),var(--violetBlueCircle));
+}
+.circle span{
+    font-size: 48px;
+    color: var(--white);
+    font-weight: 900;
+    
+   
+}
+.circle p{
+    font-size: 12px;
+    padding: 1.8rem;
+    color: var(--paleBlue);
+    
+    
+}
+.bottom h1{
+    font-size: 18.8px;  
+    color: var(--white); 
+}
+.bottom p{
+   font-size: 12px;
+   color: var(--paleBlue);
+   margin-top: 8px;
+  
+   
+}
+/* ASIDE2 */
+.aside h1{
+    font-size: 16.9px;
+    margin-top: 20px;
+    color: var(--dGrayBlue);
+}
+.aside{
+    width: 50%;
+    border-radius:0 14px 14px 0;
+}
+.aside .item{
+    height: 80%;
+  
+    
+}
+img{
+    width: 13px;
+    
+    
+}
+ul li{
+    margin-top: 12px;
+    margin-right: 14px;
+    padding: 6px;
+    list-style-type: none;
+    border-radius: 4px ;
+    
+}
+li:nth-child(1){
+    background-color:var(--lightRed);
+   color:  hsl(0, 100%, 67%);
+  
+}
+li:nth-child(2){
+    background-color:var(--orangeYellow);
+    color:  hsl(39, 91%, 60%);
+    
+}
+li:nth-child(3){
+    background-color:var(--greenTeal);
+    color: hsl(166, 91%, 34%);
+   
+}
+li:last-child{
+    background-color: rgb(239, 239, 252);
+    color:rgb(15, 15, 154);
+    
+}
+li .s{
+    color: var(--dGrayBlue);
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 43px;
+}
+li .sS{
+    margin-left: 57px;
+}
+li .span{
+    font-size: 12px;
+    color: hsla(224, 30%, 27%, 0.822);
+   
+}
+.item input{
+    margin-top: 20px;
+    outline: none;
+    border: 0;
+    padding: 11px;
+    width: 175.9px;
+    border-radius: 50px;
+    background-color: var(--dGrayBlue);
+    color: var(--white);
+    font-size: 11px;
+    
+}
+.item input:active{
+    background: linear-gradient(var(--lightSlateBackground),var(--lightRoyalBlue));
+    
+    
+}
+.attribution{
+    margin-top: 70px;
+    width: 100%;
+    
+}
+.attribution a{
+text-decoration: none;
+}
+/* MEDIA QUERY */
+
+@media screen and (max-width:375px){
+ body{
+    position: static;
+    top: unset;
+    left: unset;
+    transform: none;
+    background-color: var(--white);
+ 
+ }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+    .side{
+        width: 100%; 
+        border-radius:0 0 28px 28px;
+        height: 330px;
+        
+    }
+    .side h2{
+        font-size: 17px;
+        margin-top: 19px;
+        
+    }
+    .circle{
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        margin-top: 20px;
+    
+    }
+    .lB{
+        display: none;
+        word-break: normal;
+        white-space: wrap;
+    }
+    .bottom{
+        margin-top: 22px;
+    }
+    .bottom h1{
+        font-size: 24px;
+    }
+    .bottom p{
+        font-size: 15px;
+        padding:0 59px 0 61px;
+        font-size: 17px;
+        
+    }
+    .aside{
+        width: 320px;
+        margin:0 20px 0 24px;
+        
+        
+        
+    }
+     .aside h1{
+        font-size: 20px;
+        
+        
+
+    }
+    .aside ul li{
+        padding: 17px;
+        border-radius: 15px;
+    }
+    .item input{
+        padding: 17px;
+        width: 290px;
+        font-size: 16px;
+    }
+    li .s{
+        margin-left: 153px;
+    }
+    li .sS{
+        margin-left: 169px;
+    }
+    
+   
+
+  
+    
+}
+
