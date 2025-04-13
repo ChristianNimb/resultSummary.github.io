@@ -47,7 +47,7 @@ main{
 /* ASIDE1 */
 .side{
     text-align: center;
-    width: 215px;
+    width: 230px;
     background: linear-gradient(var(--lightSlateBackground),var(--lightRoyalBlue)); 
     border-radius: 14px 16px 16px 14px ;
 }
@@ -98,6 +98,7 @@ main{
 .aside{
     width: 50%;
     border-radius:0 14px 14px 0;
+    padding: 12px;
 }
 .aside .item{
     height: 80%;
@@ -177,6 +178,13 @@ li .span{
 text-decoration: none;
 }
 /* MEDIA QUERY */
+@media screen and (min-width:1440px) {
+    main{
+        /* background-color: red; */
+       height: 100%;
+       width: 100%;
+    }
+}
 
 @media screen and (max-width:375px){
  body{
