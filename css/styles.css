@@ -168,8 +168,7 @@ li .span{
 }
 .item input:active{
     background: linear-gradient(var(--lightSlateBackground),var(--lightRoyalBlue));
-    cursor: pointer;
-    
+   cursor: pointer;
     
 }
 .attribution{
